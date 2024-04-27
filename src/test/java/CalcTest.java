@@ -8,18 +8,18 @@ import org.junit.Test;
  */
 public class CalcTest {
     @Test
-    public void shouldReturn2When1plus1() {
+    public void shouldReturn2When1plus1() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Calc calc = new Calc();
-        int actualResult = calc.compute(1, 1, "+");
+        int actualResult = calc.compute(1, 1, "Add");
         int exceptResult = 2;
         Assert.assertEquals(exceptResult, actualResult);
 
     }
 
     @Test
-    public void shouldReturn0When1sub1() {
+    public void shouldReturn0When1sub1() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Calc calc = new Calc();
-        int actualResult = calc.compute(1, 1, "-");
+        int actualResult = calc.compute(1, 1, "Sub");
         int exceptResult = 0;
         Assert.assertEquals(exceptResult, actualResult);
 

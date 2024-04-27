@@ -4,7 +4,7 @@
  * @description:
  */
 public class Calc {
-    public int compute(int a, int b, String operation) {
+    public int compute(int a, int b, String operation) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Computable computable = ComputeFactory.getCompute(operation);
         return computable.compute(a, b);
     }
