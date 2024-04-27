@@ -25,4 +25,13 @@ public class CalcTest {
 
     }
 
+    @Test
+    public void shouldReturn4When2sub2() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+        Calc calc = new Calc();
+        int actualResult = calc.compute(2, 2, "Multi");
+        int exceptResult = 4;
+        Assert.assertEquals(exceptResult, actualResult);
+
+    }
+
 }
