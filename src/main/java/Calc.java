@@ -5,6 +5,17 @@
  */
 public class Calc {
     public int compute(int a, int b, String operation) {
-        return -1;
+        switch (operation) {
+            case "+":
+                return a + b;
+            case "-":
+                return a - b;
+            case "*":
+                return a * b;
+            case "/":
+                return a / b;
+            default:
+                throw new IllegalArgumentException();
+        }
     }
 }

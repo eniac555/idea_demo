@@ -19,7 +19,7 @@ public class CalcTest {
     @Test
     public void shouldReturn0When1sub1() {
         Calc calc = new Calc();
-        int actualResult = calc.compute(1, 1, "1");
+        int actualResult = calc.compute(1, 1, "-");
         int exceptResult = 0;
         Assert.assertEquals(exceptResult, actualResult);
 
