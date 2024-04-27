@@ -5,17 +5,7 @@
  */
 public class Calc {
     public int compute(int a, int b, String operation) {
-        switch (operation) {
-            case "+":
-                return a + b;
-            case "-":
-                return a - b;
-            case "*":
-                return a * b;
-            case "/":
-                return a / b;
-            default:
-                throw new IllegalArgumentException();
-        }
+        Computable computable = ComputeFactory.getCompute(operation);
+        return computable.compute(a, b);
     }
 }
